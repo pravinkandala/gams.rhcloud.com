@@ -1,0 +1,77 @@
+.attendance-form
+{
+	margin-top: 20px;
+}
+.table
+{
+	-webkit-user-select: none;  /* Chrome all / Safari all */
+	-moz-user-select: none;     /* Firefox all */
+	-ms-user-select: none;      /* IE 10+ */
+
+  /* No support for these yet, use at own risk */
+	-o-user-select: none;
+	user-select: none;          
+}
+
+.table-striped > tbody > tr:nth-child(odd) {
+background-color: rgba(124, 157, 190, 0.24);
+}
+
+thead>tr>th {
+   text-align: center;   
+}
+
+.table > tbody > tr > td {
+	padding:11px;	
+}
+.container-fluid {
+   padding-left: 30px;
+   padding-right: 30px;
+}
+.table > tbody > tr > td:nth-child(n+3) {
+   padding: 7px 4px;
+}
+.select-sub
+{
+	padding:5px;
+}
+.reports-table
+{
+	 margin-top: 15px;
+	-webkit-user-select: text;  /* Chrome all / Safari all */
+	-moz-user-select: text;     /* Firefox all */
+	-ms-user-select: text;      /* IE 10+ */
+
+  /* No support for these yet, use at own risk */
+	-o-user-select: text;
+	user-select: text; 
+}
+.reports-table > tbody > tr > td
+{
+	text-align: center;
+}
+.reports-table > tbody > tr > td:nth-child(3)
+{
+	text-align: left;
+}
+ul.nav li.dropdown > a.login-state {
+	color:#ffffff;
+}
+.btn-login {
+	padding:4px 15px;
+	width:100%;
+}
+.block {
+	width:100%;
+	height:100%;
+	position:fixed;
+	z-index:1001;	
+}
+.logged-in
+{
+	color:#F0980F !important;
+}
+.btn-login-main
+{
+	padding:10px 30px;
+}

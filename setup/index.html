@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Setup File for AMS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   
+
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    
+    <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/datepicker.css">
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <script src="js/prefixfree.min.js"></script>
+            <script src="script.js"></script>
+            <script src="js/index.js"></script>
+
+
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="page-header">
+            <h1>Setup File <small>Attendance Management System</small></h1>
+        </div>
+</div>
+
+        <!-- Registration form - START -->
+        <div class="container" id="contain">
+            <div id="steps">
+            <div class="step active" data-desc="Database Credentials">1</div>
+            <div class="step" data-desc="Access Credentials">2</div>
+            <div class="step" data-desc="Import Student's list">3</div>
+            <div class="step" data-desc="Your order">4</div>
+        </div>
+            <div class="row">
+                <form id="form1">
+                    <div>
+                        <div class="row">
+                            <div class="col-md-offset-4 col-md-4">
+                                <div class="well well-sm"><strong><span class="glyphicon glyphicon-asterisk"></span>Required Field</strong>
+                                </div>
+                                <div class="form-group">
+                                    <label for="DBuser">Enter Database Username</label>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" id="dbuname" name="dbuname" placeholder="Username" required>
+                                        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                                    </div>
+
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="DBpass">Enter Database password</label>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" id="dbpass" name="dbpass" placeholder="Password" required>
+                                        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                                    </div>
+
+                                </div>
+                                <div class="form-group">
+                                    <label for="DBname">Enter Database Name</label>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" id="dbname" name="dbname" placeholder="Database Name" required>
+                                        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                                    </div>
+
+                                </div>
+
+                                
+                                <div class="form-group">
+                                    <label for="DBname">Sem Starting Date</label>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" id="date" name="semdate" placeholder="Select Date" required>
+                                        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <input type="button" name="next" id="next" value="Next" class="btn btn-info pull-right">
+                    </div>
+
+                </form>
+                <div class="col-lg-5 col-md-push-1">
+                    <div class="col-md-12">
+
+                    </div>
+                </div>
+                <!-- Registration form - END -->
+
+            </div>
+
+
+                
+            <script type="text/javascript">
+                $(document).ready(function() {
+
+                    $('#date').datepicker({
+                        format: "dd/mm/yyyy",
+                        autoclose: true
+                    });
+
+                });
+            </script>
+
+
+
+
+            
+</body>
+
+</html>
